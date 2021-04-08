@@ -66,7 +66,7 @@ if(Number(user_input) <=20){
         output_string = "zero"
     }
 }else{
-    for(i=user_input.toString().length;i> 0;i=i-3){
+    for(let i=user_input.toString().length;i> 0;i=i-3){
         //console.log(`${user_input.toString()[i-3]}${user_input.toString()[i-2]}${user_input.toString()[i-1]}`, i)
         output_string =process_hundreds(`${user_input.toString()[i-3]}${user_input.toString()[i-2]}${user_input.toString()[i-1]}`, i)+ output_string
     }
